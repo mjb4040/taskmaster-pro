@@ -119,6 +119,10 @@ $("#trash").droppable({
 $("#task-form-modal").on("show.bs.modal", function() {
   // clear values
   $("#modalTaskDescription, #modalDueDate").val("");
+  $("#modalDueDate").datepicker({
+    minDate: 1
+  });
+
 });
 
 // modal is fully visible
